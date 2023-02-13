@@ -1,5 +1,7 @@
 # Rust STM32 test
 
+> ⛔️ Main issue: Cannot have multiple `memory.x` files in sub-packages.
+
 ## Add toolchain
 
 ```sh
