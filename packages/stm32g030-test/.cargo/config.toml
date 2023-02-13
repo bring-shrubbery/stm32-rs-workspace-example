@@ -1,0 +1,12 @@
+[target.thumbv6m-none-eabi]
+runner = 'probe-run --chip STM32G030F6P6'
+rustflags = ["-C", "link-arg=-Tlink.x"]
+
+[build]
+target = "thumbv6m-none-eabi" # M0 / M0+
+# target = "thumbv7m-none-eabi" # M3
+# target = "thumbv7em-none-eabi" # M4 / M7 without FPU
+# target = "thumbv7em-none-eabihf" # M4F / M7F with FPU
+
+[env]
+DEFMT_LOG = "info"
